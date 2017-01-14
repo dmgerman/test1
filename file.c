@@ -1,8 +1,13 @@
 #include <stdio.h>
 
-int sum(int i) {
-    int total = 0;
+long sum(long i) {
+    long total = 0;
     while (i-->0) total+=i;
+    return total;
+}
+long prod(long i) {
+    long total = 1;
+    while (i-->0) total*=i;
     return total;
 }
 int fact(int i)
@@ -13,6 +18,7 @@ int fact(int i)
 int main(void)
 {
     printf("Fact: %d\n", fact(10));
-    printf("Sum: %d\n", sum(10));    
+    printf("Sum: %d\n", sum(10));
+    printf("Product: %d\n", prod(10));
     return 0;
 }
